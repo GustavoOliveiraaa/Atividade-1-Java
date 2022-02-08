@@ -1,48 +1,56 @@
-// AAAA aaa
 import java.util.Scanner;
 
 public class Atividade1 {
-    public static void main (String args[]) {
-        Scanner read = new Scanner(System.in);
-            int n1;
-            int n2;
-            int a1;
-                
-            System.out.println ("Insira o primeiro numero");
-                n1 = read.nextInt();
+	public static void main(String args[]) {
+		Scanner read = new Scanner(System.in);
 
-                if (n1 % 2 == 0) {
-                    System.out.print("|Par|");        
-                } else {
-                    System.out.print("|Impar|");
-                }
+		int a, b, c, d, soma;
 
-            System.out.println("Insira o segundo numero");
-                n2 = read.nextInt();
-                
-                if (n2 % 2 == 0) {
-                    System.out.print("|Par|");        
-                } else {
-                    System.out.print("|Impar|");
-                }
+		System.out.println("Insira o primeiro numero:");
+		a = read.nextInt();
+		System.out.println("Insira o segundo numero:");
+		b = read.nextInt();
+		System.out.println("Insira o terceiro numero:");
+		c = read.nextInt();
+		System.out.println("Insira o quarto numero:");
+		d = read.nextInt();
 
+		if(a > b && a > c && a > d) {
+			System.out.println(a + " Maior");
+		} else if(b > a && b > c && b > d) {
+			System.out.println(b + " Maior");
+		} else if(c > a && c > b && c > d) {
+			System.out.println(c + " Maior!");
+		} else {
+			System.out.println(d + " Maior!");
+		}
 
-            if(n1 > n2) {
-                System.out.println(n1 + "-Maior valor");
+		if((a % 2) == 0) {
+			System.out.println(a + " -> Par");
+		} else {
+			System.out.println(a + " -> Impar");
+		}
 
-         } else if (n2 > n1)  {
-             System.out.println(n2 + "-Maior valor");
-            
-             a1 = n1 + n2;
+		if((b % 2) == 0) {
+			System.out.println(b + " -> PAR");
+		} else {
+			System.out.println(b + " -> Impar");
+		}
 
-             System.out.println("Resultado:" + a1);
-                a1 = read.nextInt();
+		if((c % 2) == 0) {
+			System.out.println(c + " -> Par");
+		} else {
+			System.out.println(c + " -> Impar");
+		}
 
-                    if (a1 % 2 == 0) {
-                        System.out.print("|Par|");        
-             } else {
-                 System.out.print("|Impar|");
-             }
-         }  
-    }
+		if((d % 2) == 0) {
+			System.out.println(d + " -> Par");
+		} else {
+			System.out.println(d + " -> Impar");
+		}
+
+		soma = (a + b + c + d);
+
+		System.out.println("A soma total é " + soma);
+	}
 }
