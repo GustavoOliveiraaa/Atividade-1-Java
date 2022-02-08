@@ -10,25 +10,38 @@ public class Atividade1 {
             System.out.println ("Insira o primeiro numero");
                 n1 = read.nextInt();
 
+                if (n1 % 2 == 0) {
+                    System.out.print("|Par|");        
+                } else {
+                    System.out.print("|Impar|");
+                }
+
             System.out.println("Insira o segundo numero");
                 n2 = read.nextInt();
+                
+                if (n2 % 2 == 0) {
+                    System.out.print("|Par|");        
+                } else {
+                    System.out.print("|Impar|");
+                }
+
 
             if(n1 > n2) {
-                System.out.println(n1 + "Maior valor");
+                System.out.println(n1 + "-Maior valor");
+
          } else if (n2 > n1)  {
-             System.out.println(n2 + "Maior valor");
+             System.out.println(n2 + "-Maior valor");
             
              a1 = n1 + n2;
 
              System.out.println("Resultado:" + a1);
+                a1 = read.nextInt();
 
-             a1 = read.nextInt();
-             if (a1 % 2 == 0) {
-                 System.out.print("Par");        
+                    if (a1 % 2 == 0) {
+                        System.out.print("|Par|");        
              } else {
-                 System.out.print("impar");
+                 System.out.print("|Impar|");
              }
-         }
-         
+         }  
     }
 }
